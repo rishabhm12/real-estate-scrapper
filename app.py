@@ -103,7 +103,7 @@ def scrape_estate(soup, parent_url):
 
 if __name__ == "__main__":
     driver.get(parent_url + "/all-projects?cities={0}".format(CITY))
-    # scroll_down(driver)
+    scroll_down(driver)
     print("Completed scrolling down...")
     time.sleep(5)
 
