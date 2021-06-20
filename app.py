@@ -13,6 +13,8 @@ import re
 import json
 
 
+# driver = webdriver.Chrome(ChromeDriverManager().install())
+
 CITY = "Mumbai"
 DATA_DIR = "data"
 
@@ -59,8 +61,8 @@ def get_property_geocodes(geo_url):
             .find("script", {"type": "text/x-config"})
             .string
         )
-        lat = float(geo_info["latitude"])
-        lon = float(geo_info["longitude"])
+        lat = geo_info["latitude"]
+        lon = geo_info["longitude"]
 
     return lat, lon
 
