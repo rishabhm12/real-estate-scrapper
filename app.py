@@ -13,12 +13,10 @@ import re
 import json
 
 
-# driver = webdriver.Chrome(ChromeDriverManager().install())
-
 CITY = "Mumbai"
-PATH = "/Users/rishabh.ext/.wdm/drivers/chromedriver/mac64/91.0.4472.101/chromedriver"
 DATA_DIR = "data"
-driver = webdriver.Chrome(PATH)
+
+driver = webdriver.Chrome(ChromeDriverManager().install())
 headers = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
 }
